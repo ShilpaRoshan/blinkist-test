@@ -22,15 +22,27 @@ export function VariationA({ userId, variation }) {
     );
     const countPageView = () => {
       const storedPageViews = localStorage.getItem("pageViews");
-      const updatedPageViews = storedPageViews
-        ? parseInt(storedPageViews) + 1
-        : 1;
-      localStorage.setItem("pageViews", updatedPageViews.toString());
-      setPageView(updatedPageViews);
+      if (storedPageViews) {
+        setPageView(parseInt(storedPageViews));
+      }
+      const handlePageLoad = () => {
+        setPageView((prev) => {
+          const updateCount = prev + 1;
+          localStorage.setItem("pageViews", updateCount.toString());
+          return updateCount;
+        });
+      };
+      // const updatedPageViews = storedPageViews
+      //   ? parseInt(storedPageViews) + 1
+      //   : 1;
+      window.addEventListener("load", handlePageLoad);
+      return () => {
+        window.removeEventListener("load", handlePageLoad);
+      };
     };
     handleClick();
     countPageView();
-  }, []);
+  }, [pageView]);
 
   const handleClick = async () => {
     try {

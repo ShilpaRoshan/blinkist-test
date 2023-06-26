@@ -1,0 +1,35 @@
+.books {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+.variation-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.variation-buttonA {
+  width: 200px;
+  height: 50px;
+  border: none;
+  background-color: #2ce080;
+  color: #03314b;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.variation-buttonB {
+  width: 200px;
+  height: 50px;
+  border: none;
+  color: #03314b;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.img-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}

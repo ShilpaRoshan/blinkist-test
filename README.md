@@ -16,8 +16,6 @@ From the challenge I understood that the requirement was to prepare a AB Testing
 
 ## How to Run
 
-<<<<<<< HEAD
-
 - Clone the repository make sure to have `npm` and `node` in your local machine.
 
 - Clone the repository:

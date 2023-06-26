@@ -16,20 +16,20 @@ From the challenge I understood that the requirement was to prepare a AB Testing
 
 ## How to Run
 
-“\*” Clone the repository make sure to have `npm` and `node` in your local machine.
+“*” Clone the repository make sure to have `npm` and `node` in your local machine.
 
-“\*” Clone the repository:
+“*” Clone the repository:
 `git clone git@github.com:ShilpaRoshan/blinkist-test.git`
 
-“\*” Go inside the repo:
+“*” Go inside the repo:
 `cd blinkist-test`
 
-“\*” Installations:
+“*” Installations:
 `npm install`
 
-“\*” Start the Server:
+“*” Start the Server:
 `npm run dev` for client side and `npm start` for server-side
-“\*” Visit the app:
+“*” Visit the app:
 `http://127.0.0.1:5173/` for client-side and `http://localhost:8000` for server-side
 
 ## Tech stack
